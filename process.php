@@ -3,7 +3,7 @@ require_once 'functions.php';
 $name = $location = '';
 $update = false;
 $id = 0;
-$mysqli = new mysqli('localhost', 'never_use_root', 'never_use_password', 'datbase_name') or die($mysqli_error($mysqli));
+$mysqli = new mysqli('localhost', 'never_use_root', 'never_use_password', 'your_database_name') or die($mysqli_error($mysqli));
 if(isset($_POST['save'])) {
   $name = in($_POST['name']);
   $location = in($_POST['location']);
