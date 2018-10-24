@@ -1,5 +1,5 @@
 <?php require_once 'process.php'; 
-$mysqli = new mysqli('localhost', 'never_use_root', 'never_use_password', 'ctcrud') or die($mysqli_error($mysqli));
+$mysqli = new mysqli('localhost', 'never_use_root', 'never_use_password', 'your_database_name') or die($mysqli_error($mysqli));
 $result = $mysqli->query("SELECT * FROM data where deleted = 0") or die($mysqli->error)?>
 <!DOCTYPE html>
 <html lang="en">
